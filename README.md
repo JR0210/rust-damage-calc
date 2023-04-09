@@ -1,38 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rust Damage Calculator
 
-## Getting Started
+This project aims to serve as a gear/damage calculator for the survival game [Rust](https://rust.facepunch.com/). 
 
-First, run the development server:
+Using the in game stats for gear and weapons you will be able to replicate an enemies or your own gear set and see how many shots/hits a weapon would require to kill the enemy. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The calculator will provide the minimum shots to kill, base resistance level of a gear set, weapon damage & general stats.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# TODO
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ - Recreate figma design in project
+ - Create UI components
+ - Choose CMS/DB
+ - Create entries for item stats in CMS/DB
+ - Link CMS/DB that holds item stats
+ - Fetch game items on load
+ - Allow user to select gear/weapon/ammo
+ - Validate compatible selections for gear
+ - Store selections in state
+ - Calculate stats with custom hook
+ - Present results
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Undecided
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ - Calculating bleed damage/timer
+ - Calculating different ammo types (Regular/HV/Incendiary/Explosive)
